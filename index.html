@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebo Hotel itinerary </title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --deep-blue: #ff20dd;
+    }
+    .text-deep-blue { color: var(--deep-blue); }
+    .bg-deep-blue { background-color: var(--deep-blue); }
+    .border-deep-blue { border-color: var(--deep-blue); }
+    .closed { color: red; font-weight: bold; }
+    .status { font-weight: 600; margin-left: 8px; }
+  </style>
+</head>
+<body class="bg-white text-deep-blue min-h-screen p-4 md:p-8">
+  <div class="max-w-5xl mx-auto">
+    <header class="text-center mb-10" data-aos="fade-down">
+      <img src="images/nebo high res.png" alt="Hotel Logo" class="mx-auto h-20 mb-4" />
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">Mare Holidays</h1>
+      <p class="text-lg md:text-xl text-deep-blue">Varkala vacation starts here!</p>
+    </header>
+
+    <div class="space-y-10">
+      <section class="bg-white p-6 rounded-2xl shadow border border-deep-blue" data-aos="fade-up">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-deep-blue">Ayurveda Massage & Therapy</h2>
+        <div class="space-y-6">
+          
+          <div data-aos="zoom-in">
+            <h3 class="text-xl font-bold text-deep-blue">🌺 Orchid Ayurveda</h3>
+            
+            <p><strong>Contact:</strong> <a href="tel:+919745657181" class="text-blue-600 underline">+91 9745657181</a></p>
+            <p><strong>Opening Time:</strong> 8:00 AM &nbsp;&nbsp; <strong>Closing Time:</strong> 8:00 PM</p>
+            <p><strong>Description:</strong> Traditional Kerala massage therapies with serene ambience and expert care .</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white p-6 rounded-2xl shadow border border-deep-blue" data-aos="fade-up">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-deep-blue">Top Attractions Nearby</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div data-aos="zoom-in">
+            <img src="images/anjengo.jpg" alt="Anjengo Fort and Lighthouse" class="w-full h-48 object-cover rounded-xl mb-2" />
+            <h3 class="text-xl font-bold text-deep-blue"><a href="https://g.co/kgs/EGzSABP" target="_blank">🏰 Anjengo Fort & Lighthouse</a>
+              <span class="status" id="anjengo-status"></span>
+            </h3>
+            <p>Historical site with colonial charm and sea views.</p>
+            <p><strong>Opening Time:</strong> 9:00 AM &nbsp;&nbsp; <strong>Closing Time:</strong> 5:30 PM</p>
+
+          </div>
+          <div data-aos="zoom-in">
+            <img src="images/kappil.jpeg" alt="Kappil Beach" class="w-full h-48 object-cover rounded-xl mb-2" />
+            <h3 class="text-xl font-bold text-deep-blue"><a href="https://g.co/kgs/QFFSABP" target="_blank">🏖️ Kappil Beach</a></h3>
+            <p>Where tranquil backwaters meet the sea.</p>
+          </div>
+          <div data-aos="zoom-in">
+            <img src="images/blacksandbeach.jpg" alt="Black Sand Beach" class="w-full h-48 object-cover rounded-xl mb-2" />
+            <h3 class="text-xl font-bold text-deep-blue"><a href="https://g.co/kgs/yXxvsRm" target="_blank">⚫ Black Sand Beach</a></h3>
+            <p>Peaceful beach with naturally dark sands.</p>
+          </div>
+          <div data-aos="zoom-in">
+            <img src="images/aquarium.jpg" alt="Varkala Aquarium" class="w-full h-48 object-cover rounded-xl mb-2" />
+            <h3 class="text-xl font-bold text-deep-blue"><a href="https://g.co/kgs/hSiDyvp" target="_blank">🐠 Varkala Aquarium</a>
+              <span class="status" id="aquarium-status"></span>
+            </h3>
+            <p>Colorful marine life in a compact aquarium setting.</p>
+            <p><strong>Opening Time:</strong> 10:00 AM &nbsp;&nbsp; <strong>Closing Time:</strong> 5:00 PM</p>
+
+          </div>
+          <div data-aos="zoom-in">
+            <img src="images/performing arts center.jpeg" alt="Center for Performing Arts" class="w-full h-48 object-cover rounded-xl mb-2" />
+           <h3 class="text-xl font-bold text-deep-blue"><a href="https://g.co/kgs/zXdrS1j" target="_blank">🎭 Center for Performing Arts</a>
+              <span class="status" id="arts-status"></span>
+           </h3>
+           <p>Live performances showcasing Kerala’s cultural richness.</p>
+           <p><strong>Opening Time:</strong> 10:00 AM &nbsp;&nbsp; <strong>Closing Time:</strong> 10:00 PM</p>
+            
+          </div>
+           <div data-aos="zoom-in">
+            <img src="images/janardhana swami temple.jpg" alt="Center for Performing Arts" class="w-full h-48 object-cover rounded-xl mb-2" />
+           <h3 class="text-xl font-bold text-deep-blue"><a href="https://g.co/kgs/dx95A1u" target="_blank">🛕Shri Janardhana Swamy Temple</a>
+              <span class="status" id="arts-status"></span>
+           </h3>
+           <p>A timeless sanctuary of devotion overlooking the sea.</p>
+           <p><strong>Opening Time:</strong> 07:00 AM &nbsp;&nbsp; <strong>Closing Time:</strong> 08:00 PM</p>
+        </div>
+      </section>
+
+      <section class="bg-white p-6 rounded-2xl shadow border border-deep-blue" data-aos="fade-up">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-deep-blue">Places Within 50km to Visit</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div data-aos="zoom-in">
+            <img src="images/elephant-feeding.jpg" alt="Elephant Park Parippally" class="w-full h-48 object-cover rounded-xl mb-2" />
+            <h3 class="text-xl font-bold text-deep-blue"><a href="https://g.co/kgs/L8AVHcq" target="_blank">🐘 Kaveri Elephant Park</a>
+                <span class="status" id="elephant-status"></span>
+            </h3>
+            <p>Watch elephants roam and feed in a lush park.</p>
+            <p><strong>Opening Time:</strong> 8:00 AM &nbsp;&nbsp; <strong>Closing Time:</strong> 7:00 PM</p>
+
+          </div>
+          <div data-aos="zoom-in">
+            <img src="images/Jatayu.jpg" alt="Jadayu Earth Center" class="w-full h-48 object-cover rounded-xl mb-2" />
+            <h3 class="text-xl font-bold text-deep-blue"><a href="https://g.co/kgs/N529ZXW" target="_blank">🪨 Jadayu Earth Center</a>
+              <span class="status" id="jatayu-status"></span>
+            </h3>
+            <p>Massive bird sculpture and adventure activities.</p>
+            <p><strong>Opening Time:</strong> 9:30 AM &nbsp;&nbsp; <strong>Closing Time:</strong> 6:30 PM</p>
+
+          </div>
+          <div data-aos="zoom-in">
+            <img src="images/Backwaters-of-Munroe-Island.webp" alt="Munroe Islands" class="w-full h-48 object-cover rounded-xl mb-2" />
+            <h3 class="text-xl font-bold text-deep-blue"><a href="https://g.co/kgs/7YV7i9c" target="_blank">🚣 Munroe Islands</a></h3>
+            <p>Stunning backwater boat rides through village life.</p>
+          </div>
+        </div>
+      </section>
+      
+
+
+      <section class="bg-white p-6 rounded-2xl shadow border border-deep-blue" data-aos="fade-up">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-deep-blue">Adventure Activities</h2>
+        <div class="space-y-6">
+          <div data-aos="zoom-in">
+            <h3 class="text-xl font-bold text-deep-blue">🤿 Scuba Diving</h3>
+            <p><strong>Operator:</strong><a href="https://g.co/kgs/SdvuV8r" target="_blank">Dive Kerala</a></p>
+            <p><strong>Contact:</strong><a href="tel:+917902223931" class="text-blue-600 underline"> +91 7902223931</a></p>
+            <p><strong>Price:</strong> Varies — please contact directly for current rates.</p>
+          </div>
+          <div data-aos="zoom-in">
+            <h3 class="text-xl font-bold text-deep-blue">🛶 Kayaking</h3>
+            <p><strong>Operators:</strong></p>
+            <ul class="list-disc list-inside ml-6">
+              <li><a href="https://g.co/kgs/SDghXJq" target="_blank">Mangrove Village Adventures ——</a><a href="tel:+9191234 56789" class="text-blue-600 underline"> +91 91234 56789</a></li>
+              <li><a href="https://g.co/kgs/jePwEkY" target="_blank">Siva Kayaking —</a> &nbsp<a href="tel:+919349460261" class="text-blue-600 underline"> +91 9349460261</a></li>
+            </ul>
+            <p><strong>Price:</strong> Varies — please contact directly for current rates.</p>
+          </div>
+          <div data-aos="zoom-in">
+            <h3 class="text-xl font-bold text-deep-blue">🪂 Paragliding</h3>
+            <p><strong>Operator:</strong><a href="https://g.co/kgs/zgWdm45" target="-blank"> Fly Varkala</a></p>
+            <p><strong>Contact:</strong><a href="tel:+918592989898" class="text-blue-600 underline"> +91 8592989898</a></p>
+            <p><strong>Price:</strong> Rs 4500 (Varies) — please contact directly for current rates.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white p-6 rounded-2xl shadow border border-deep-blue" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold mb-4 text-deep-blue">Dining Recommendations</h2>
+
+        <h3 class="text-xl font-bold text-deep-blue mb-2">Cafes</h3>
+        <ul class="list-disc list-inside mb-4 space-y-1">
+          <li><a href="https://g.co/kgs/jsR2Hqi" target="_blank">Clafouti restaurant(North Cliff)</a></li>
+          <li><a href="https://g.co/kgs/GuGiuoN" target="_blank">Café del Mar (North Cliff)</a></li>
+          <li><a href="https://g.co/kgs/Na4smte" target="_blank">Café Sarwaa(South Cliff)</a></li>
+          <li><a href="https://g.co/kgs/8guQoCe" target="_blank">Café Trip is Life(South Cliff)</a></li>
+          <li><a href="https://g.co/kgs/ZNfdhFK" target="_blank">Café Italiano(North Cliff)</a></li>
+          <li><a href="https://g.co/kgs/2NuZtyt" target="_blank">Darjling cafe(North Cliff)</a></li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-deep-blue mb-2">Vegetarian Restaurants</h3>
+        <ul class="list-disc list-inside mb-4 space-y-1">
+          <li><a href="https://g.co/kgs/e3N8ftd" target="_blank">Suprabhatham (Town)</a></li>
+          <li><a href="https://g.co/kgs/rGnzaRN" target="_blank">Sree Vinayaka (Town)</a></li>
+          <li><a href="https://g.co/kgs/op4WLUV" target="_blank">Saravana Bhavan (Town)</a></li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-deep-blue mb-2">Non-Vegetarian Restaurants</h3>
+        <ul class="list-disc list-inside mb-4 space-y-1">
+          <li><a href="https://g.co/kgs/hHnFbd4" target="_blank">Chimney Family Restaurant (Town)</a></li>
+          <li><a href="https://g.co/kgs/AazBLXx" target="_blank">Fabin Arabia (Town)</a></li>
+          <li><a href="https://g.co/kgs/TduW1Pj" target="_blank">Arabian Grill (Town)</a></li>
+        </ul>
+
+      </section>
+    </div>
+
+    <section class="bg-white p-6 rounded-2xl shadow border border-deep-blue mt-10" data-aos="fade-up">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-deep-blue">Helpful Info</h2>
+      <ul class="space-y-2">
+        <li><strong>Front Desk:</strong> Available 24/7 for bookings and questions&nbsp&nbsp <a href="tel:+9191234 56789" class="text-blue-600 underline">+91 9895138177</a></li>
+        <li><strong>Transportation:</strong> We can help you book taxis and tuk-tuks</li>
+      </ul>
+    </section>
+
+    <footer class="text-center text-deep-blue text-sm mt-12" data-aos="fade-up">
+      &copy; 2025 Mare Holidays. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      offset: 50,
+    });
+
+    // Closing times (24h format) for attractions:
+    const attractions = {
+      "anjengo-status": "18:00", // 6 PM
+      "aquarium-status": "17:00", // 5 PM
+      "arts-status": "22:00", // 10 PM
+      "elephant-status": "19:00", // 7 PM
+      "jatayu-status": "18:30" // 6:30 PM
+      
+    };
+
+    function checkOpenStatus() {
+      const now = new Date();
+      const currentTime = now.getHours() + ":" + now.getMinutes().toString().padStart(2, "0");
+
+      for (const id in attractions) {
+        const closing = attractions[id];
+        const statusElem = document.getElementById(id);
+        if (!statusElem) continue;
+
+        // Compare times
+        if (currentTime > closing) {
+          statusElem.textContent = "Closed";
+          statusElem.classList.add("closed");
+        } else {
+          statusElem.textContent = "Open";
+          statusElem.classList.remove("closed");
+        }
+      }
+    }
+
+    checkOpenStatus();
+    // Optional: refresh every minute
+    setInterval(checkOpenStatus, 60000);
+  </script>
+</body>
+</html>
