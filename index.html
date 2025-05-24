@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mare Holidays</title>
+  <title>Nebo Hotel itinerary </title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
-    :root {
-      --deep-blue: #ff20dd;
-    }
-    .text-deep-blue { color: var(--deep-blue); }
-    .bg-deep-blue { background-color: var(--deep-blue); }
-    .border-deep-blue { border-color: var(--deep-blue); }
-    .closed { color: red; font-weight: bold; }
-    .status { font-weight: 600; margin-left: 8px; }
-  </style>
+  :root {
+    --accent-color: #2dd4bf; /* Soft teal */
+    --text-color: #1e293b;   /* Dark slate for readability */
+  }
+  .text-deep-blue { color: var(--accent-color); }
+  .bg-deep-blue { background-color: var(--accent-color); }
+  .border-deep-blue { border-color: var(--accent-color); }
+  .closed { color: #ef4444; font-weight: bold; } /* Red-500 */
+  .status { font-weight: 600; margin-left: 8px; }
+  body {
+    background-color: #f9fafb; /* light gray background */
+    color: var(--text-color);
+  }
+</style>
+
 </head>
-<body class="bg-white text-deep-blue min-h-screen p-4 md:p-8">
+<body class="bg-gray-50 text-gray-800 min-h-screen p-4 md:p-8">
   <div class="max-w-5xl mx-auto">
     <header class="text-center mb-10" data-aos="fade-down">
       <img src="images/nebo high res.png" alt="Hotel Logo" class="mx-auto h-20 mb-4" />
